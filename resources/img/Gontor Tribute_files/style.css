@@ -1,0 +1,384 @@
+/* orange : #d35400  */
+/* blue : #2980b9    */
+/*pink : #8e44ad     */
+/******************************/
+/* global*/
+/******************************/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  background: #ecf0f1;
+  color: #555;
+  font-family: 'Lato','Roboto','Arial','sans-serif';
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/******************************/
+/* Reusable component*/
+/******************************/
+.row{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section{
+  padding: 85px 0;
+}
+
+.box{
+  padding: 1%;
+  height:auto;
+}
+
+/* ----HEADING-------- */
+h1,
+h2,
+h3,
+h4{
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2{
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+h3{
+  font-size: 150%;
+  text-align: center;
+  font-weight: 20%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+h4{
+  font-size: 80%;
+  text-align: center;
+  word-spacing: 1.5px;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+  font-weight: 400%;
+}
+
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: orange;
+  content: "";
+  width: 100px;
+  margin:0 auto;
+  margin-bottom: 30px;
+}
+
+/*-----PARAGRAPH------*/
+
+.long-copy{
+  line-height: 110%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+p{
+  width: 70%;
+  margin-left: 15%;
+  text-align: justify;
+
+}
+.box p{
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*-----ICON-------*/
+.icon-big{
+  font-size: 100%;
+  display:block;
+  color:white;
+}
+
+.icon-small{
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right:2px;
+
+  /*secrets to align text and icons*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+/******************************/
+/* HEADER */
+/******************************/
+header{
+  background-image: Linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url('img/gontorHeader.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+  height: 100vh;
+}
+
+.gontor-text-box{
+  position: absolute;
+  top: 35%;
+  left:30%;
+  color:#bbc9cd;
+}
+
+.logo {
+  float: left;
+  height: 150px;
+  margin-top:-10px;
+  margin-left: 30px;
+  padding: 0 10px;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+
+}
+
+.logo:hover{
+  transform: scale(1.4);
+  transition: transform 0.8s;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);}
+
+
+/* ----NAVBAR-------- */
+
+.navbar,
+.navbar-row{
+  overflow: visible;
+  display: block;
+  width: 100%;
+  position: fixed;
+}
+
+.main-nav, .navbar-left {
+  float: left;
+  list-style: none;
+  margin-top:30px;
+  margin-left: 180px;
+
+}
+
+.main-nav li{
+  display: inline-block;
+  padding:0 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 3px 0;
+  font-weight: 500;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  transition: border-bottom 0.3s;
+}
+
+.main-nav  li .about:hover,
+.main-nav  li .about:active{
+  color: #efab6e;
+  border-bottom: 2px solid #efab6e;
+}
+
+.main-nav  li .headMaster:hover,
+.main-nav  li .headMaster:active{
+  color: #f2bc8d;
+  border-bottom: 2px solid #efab6e;
+}
+
+.main-nav  li .gontorBranch:hover,
+.main-nav  li .gontorBranch:active{
+  color: #f0b37e;
+  border-bottom: 2px solid #efab6e;
+}
+
+.codepenIcon{
+  margin-bottom:-2px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+  display:inline;
+}
+
+.second-nav,
+.navbar-right
+{
+  float:right;
+  margin-top:30px;
+  margin-right: 50px;
+  padding:0;
+  list-style: none;
+}
+
+.second-nav li a{
+  display: inline-block;
+}
+
+  .second-nav li a:link,
+  .second-nav li a:visited{
+  padding: 2px 0;
+  font-weight: 500;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  transition: border-bottom 0.3s;
+
+}
+
+.second-nav li a:hover,
+.second-nav li a:active{
+ border-bottom: 2px solid #16a085;
+ color: #16a085;
+}
+
+ .second-nav li a:hover .codepenIcon,
+ .second-nav li a:active .codepenIcon{
+  color: #16a085;
+}
+
+/******************************/
+/*------ABOUT--------*/
+/******************************/
+.aboutSection{
+  background: #e2e8ea;
+}
+
+
+/******************************/
+/* -----HEAD-MASTER------ */
+/******************************/
+
+
+.box > img{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 15px;
+}
+
+.h2-bottom{
+  background-color:#f9f3e3;
+
+}
+.h2-bottom::after{
+  content: none;
+
+}
+
+/* -----TRIMURTI------ */
+
+.span-3-of-3{
+  padding: 0 35%;
+}
+
+.dated{
+  margin-top: -25px;
+}
+
+.dated-1{
+  margin-top: -25px;
+  width: 100%;
+  height: auto;
+}
+
+
+/******************************/
+/* -----GONTOR-BRANCH------ */
+/******************************/
+.boxcities img{
+  opacity: 0.7;
+  width: 100%;
+  height: 165.1px;
+  margin-bottom: 20px;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.boxcities img:hover{
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+
+
+
+.city-features {
+  list-style: none;
+  text-align: none;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: -7px;
+  margin-top: px;
+  }
+
+
+
+
+
+/******************************/
+/* Footer */
+/******************************/
+
+footer {
+  background-color: #333;
+  color:#fff;
+}
+
+.footer-nav a{
+  float:left;
+  list-style: none;
+  background-color: orange;
+
+  text-decoration: none;
+  /* padding-right:100px; */
+}
+
+.social-links a{
+  float: left;
+  background-color: aqua;
+  list-style: none;
+
+  text-decoration: none;
+}
+
+.footer-nav li,
+.social-link li{
+  display:inline-block;
+  margin-right: 45px;
+}
