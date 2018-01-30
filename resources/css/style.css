@@ -194,7 +194,7 @@ header{
   overflow: visible;
   display: block;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .main-nav, .navbar-left {
